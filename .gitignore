@@ -1,0 +1,5 @@
+*.class
+.idea
+*.rtf
+file.rtf
+.gitignore~
