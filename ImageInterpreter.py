@@ -2,7 +2,6 @@ from __future__ import print_function
 from PIL import Image
 from tkFileDialog import askopenfilename
 
-
 # WARNING: This program can not handle alpha layers.
 # If the image contains an alpha layer,
 # the program will crash with the phrase Too Many Values to Unpack

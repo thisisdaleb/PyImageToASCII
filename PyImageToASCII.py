@@ -4,7 +4,6 @@ from tkFileDialog import askopenfilename
 import sys
 from ImageInterpreter import ImageInterpreter
 
-
 # WARNING: This program can not handle alpha layers.
 # If the image contains an alpha layer,
 # the program will crash with the phrase Too Many Values to Unpack
