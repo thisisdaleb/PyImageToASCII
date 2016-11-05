@@ -63,10 +63,3 @@ class ImageInterpreter:
 	def loopPixels(self, im):
 		self.createPixelMatrix(im)
 		return self.createASCIIart(im)
-
-	def exportTxt(self, outputString):
-		print('exporting string: ')
-		print('length: ' + str(len(outputString)))
-		f = open("file.rtf", "w")
-		f.write(outputString)
-		f.close()
