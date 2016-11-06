@@ -38,18 +38,28 @@ class ImageInterpreter:
 				# decides what character that pixel is equal to.
 				# change these values to decide how it should look!
 				if summed < 20:
+					outputString += "#"
+				elif summed < 40:
 					outputString += "H"
-				elif summed < 50:
+				elif summed < 60:
 					outputString += "W"
-				elif summed < 70:
+				elif summed < 80:
 					outputString += "@"
-				elif summed < 120:
+				elif summed < 100:
 					outputString += "/"
-				elif summed < 155:
+				elif summed < 120:
 					outputString += "|"
-				elif summed < 190:
+				elif summed < 140:
+					outputString += "!"
+				elif summed < 160:
+					outputString += "*"
+				elif summed < 180:
 					outputString += "-"
-				elif summed < 230:
+				elif summed < 200:
+					outputString += "_"
+				elif summed < 220:
+					outputString += ","
+				elif summed < 240:
 					outputString += "."
 				else:
 					outputString += " "
