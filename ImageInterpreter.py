@@ -30,11 +30,18 @@ class ImageInterpreter:
 		x = 0;
 		y = 0;
 		Xmax, Ymax = im.size
+		maxSum = 0;
+		minSum = 500;
 
 		while (y < Ymax - 1):
 			while (x < Xmax - 1):
 				# black and white value for determining character of
 				summed = sum(self.allPixels[y][x]) / float(len(self.allPixels[y][x]))
+				if(summed>maxSum):
+					maxSum = summed;
+				if(summed<minSum):
+					minSum = summed;
+
 				# decides what character that pixel is equal to.
 				# change these values to decide how it should look!
 				if summed < 20:
@@ -68,6 +75,7 @@ class ImageInterpreter:
 			x = 0
 			y += 2
 			outputString += "\n"
+		print("min and max: " + str(minSum) + " " + str(maxSum))
 		return outputString
 
 	def loopPixels(self, im):

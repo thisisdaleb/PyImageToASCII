@@ -103,3 +103,4 @@ ENV/
 .ropeproject
 .gitignore.swp
 *.rej
+README.md~
