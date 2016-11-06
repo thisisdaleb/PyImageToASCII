@@ -45,13 +45,13 @@ class ImageInterpreter:
 				# decides what character that pixel is equal to.
 				# change these values to decide how it should look!
 				if summed < 20:
-					outputString += "#"
-				elif summed < 40:
 					outputString += "H"
-				elif summed < 60:
+				elif summed < 40:
 					outputString += "W"
-				elif summed < 80:
+				elif summed < 60:
 					outputString += "@"
+				elif summed < 80:
+					outputString += "#"
 				elif summed < 100:
 					outputString += "/"
 				elif summed < 120:
